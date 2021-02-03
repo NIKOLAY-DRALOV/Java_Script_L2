@@ -2,15 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Интернет-магазин</title>
 </head>
 <body>
-    <header>
-        <button class="btn-cart" type="button">Корзина</button>
-    </header>
-    <main>
-        <div class="products"></div>
-    </main>
-    <script src="js/main.js"></script>
+    <div class="conteiner">
+        <header>
+            <button class="btn-cart btn" type="button" id="cart-btn">Корзина</button>
+            <div id="goods-list-section" class="goods-list" style="display: none;">
+            <div id="goods-list-section__modal">
+                <input type="submit" value="X" id="goods-list-section__delete">
+                <div class="basket-products"></div>
+                <p id="goods-list__total"></p>
+            </div>
+        </div>
+            
+        </header>
+        <main>
+            <div class="products"></div>
+        </main>
+        
+            <!--beforestart-->
+            <!--<p>-->
+            <!--afterstart-->
+            <!--<span></span>-->
+            <!--beforeend-->
+            <!--</p> -->
+            <!--afterend-->
+            <script src="js/main.js"></script>
+    </div>
+        
 </body>
 </html>
